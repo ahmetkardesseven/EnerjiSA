@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Invoice Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="InvoiceDetailViewController" id="Y6W-OH-hqX" customClass="InvoiceDetailViewController" customModule="EnerjiSA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nCp-0H-czk">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="D6N-1Z-Wph">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="898"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzt-qj-BCZ">
+                                                <rect key="frame" x="30" y="28" width="333" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lkH-LX-v4E">
+                                                <rect key="frame" x="30" y="68" width="333" height="398"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDj-zQ-75h" customClass="PersonalInputView" customModule="EnerjiSA" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="333" height="77"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="77" id="Np3-Qn-v2J"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="daU-JS-xsX" customClass="PersonalInputView" customModule="EnerjiSA" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="107" width="333" height="77"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="77" id="77A-fV-kb3"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rrf-xG-1Gu" customClass="PersonalInputView" customModule="EnerjiSA" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="214" width="333" height="77"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="77" id="4NJ-HS-c7O"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rGi-Os-zAk" customClass="PersonalInputView" customModule="EnerjiSA" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="321" width="333" height="77"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="77" id="PA0-0n-RNd"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMh-NX-Jvh">
+                                                <rect key="frame" x="30" y="486" width="333" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4z-Zj-b4V" customClass="InvoiceListView" customModule="EnerjiSA" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="526" width="333" height="315"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="315" id="Y8F-3k-jzE"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="28" leading="30" bottom="57" trailing="30"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="D6N-1Z-Wph" secondAttribute="trailing" id="3Lj-0U-ai1"/>
+                                    <constraint firstItem="D6N-1Z-Wph" firstAttribute="top" secondItem="nCp-0H-czk" secondAttribute="top" id="6Ue-EO-J5D"/>
+                                    <constraint firstItem="D6N-1Z-Wph" firstAttribute="leading" secondItem="nCp-0H-czk" secondAttribute="leading" id="GLb-Rd-spJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="D6N-1Z-Wph" secondAttribute="bottom" id="X90-4h-maf"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nCp-0H-czk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="RQ9-Jg-9UX"/>
+                            <constraint firstAttribute="bottom" secondItem="nCp-0H-czk" secondAttribute="bottom" id="pUN-vu-eVq"/>
+                            <constraint firstItem="nCp-0H-czk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="t5d-wu-VDt"/>
+                            <constraint firstItem="nCp-0H-czk" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="tqO-xx-c8L"/>
+                            <constraint firstItem="D6N-1Z-Wph" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="x4e-Kv-9qG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailView" destination="rrf-xG-1Gu" id="gX7-a3-ZOe"/>
+                        <outlet property="headerLabel" destination="Rzt-qj-BCZ" id="wmx-aj-EUw"/>
+                        <outlet property="idNumberView" destination="daU-JS-xsX" id="aAs-8N-86A"/>
+                        <outlet property="installationLabel" destination="DMh-NX-Jvh" id="Bd9-P6-FWs"/>
+                        <outlet property="invoiceListView" destination="T4z-Zj-b4V" id="HaM-e7-3b9"/>
+                        <outlet property="personalNameView" destination="tDj-zQ-75h" id="DzH-v1-h5H"/>
+                        <outlet property="phoneNumberView" destination="rGi-Os-zAk" id="Bn1-sf-vGG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
